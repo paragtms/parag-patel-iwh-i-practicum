@@ -1,58 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-body, * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+body,
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    margin: 1rem;
+  margin: 1rem;
 }
 
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+input[type="submit"],
+button {
+  background-color: #333;
+  /* border: 2px solid #444; */
+  padding: 12px 18px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+table,
+form {
+  margin: 20px;
 }
 
-.card {
-    flex-basis: 31%;
-    margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+table,
+th,
+td {
+  border: 1px solid #444;
+  border-collapse: collapse;
+  padding: 15px 20px;
 }
 
-.card__email {
-    font-size: 1rem;
+th {
+  background-color: #d1cccc;
+}
+.spacer {
+  width: 200px;
+  margin: 0 20px;
+}
+a,
+button {
+  background-color: #0258ff;
+  border: 3px #0000003d;
+  border-radius: 32px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-transform: none;
+  display: block;
+  max-width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+a:hover,
+button:hover {
+  background-color: #003bb5;
+}
+.col {
+  display: flex;
 }
 
-.form-wrapper {
-    font-size: 18px;
-    max-width: 768px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border: solid 1px lightgrey;
-    border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+form {
+  max-width: 600px;
 }
 
-label, input {
-    margin-top: 5px;
-    display: block;
-    font-size: inherit;
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
-input[type="text"] {
-    padding: .25rem;
+.col {
+  flex: 1;
 }
 
-input[type="submit"] {
-    background-color: lightgrey;
-    border: none;
-    padding: .375rem 1rem;
-    margin-top: 10px;
+.col-full {
+  flex: 0 0 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 6px 8px;
+  box-sizing: border-box;
 }

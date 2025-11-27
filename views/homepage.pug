@@ -1,0 +1,20 @@
+doctype html
+html
+  head 
+        title Contacts Data
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Custom Object Table
+    table
+     thead
+      tr
+        th(rowspan='2') First Name
+        th(rowspan='2') Last Name
+        th(rowspan='2') Email
+     tbody
+      each contact in data
+            tr
+              td= contact.properties.firstname
+              td= contact.properties.lastname
+              td= contact.properties.email
