@@ -94,3 +94,12 @@ input[type="email"] {
   padding: 6px 8px;
   box-sizing: border-box;
 }
+.contact-add-frm {
+    padding: 50px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+.contact-add-frm button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
