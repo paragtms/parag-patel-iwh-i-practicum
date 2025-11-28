@@ -8,22 +8,34 @@ html
   body
     h1 Add a New Contact Data
     form(method='post', action='/update-cobj', class='contact-add-frm')
-      .form-row
-        .col
-          label(for='fname') FirstName:
-          br
-          input(type='text', name='fname', required)
-        .col
-          label(for='lname') LastName:
-          br
-          input(type='text', name='lname', required)
-
-      .form-row
-        .col.col-full
-          label(for='email') Email:
-          br
-          input(type='email', name='email', required)
-      button(type='submit') Add
+        .form-row
+            .col
+                label(for='fname') FirstName 
+                input(type='text', name='fname', required)
+            .col
+                label(for='lname') LastName
+                input(type='text', name='lname', required)
+        .form-row
+            .col.col-full
+                label(for='email') Email
+                input(type='email', name='email', required)
+        h3 Pet Details
+        br
+        .form-row
+            .col
+                label(for='name') Name:
+                input(type='text', name='name', required)
+            .col
+                label(for='petType') Type:
+                input(type='text', name='petType', required)
+        .form-row
+            .col
+                label(for='age') Age:
+                input(type='text', name='age', required)
+            .col
+                label(for='gender') Gender:
+                input(type='text', name='gender', required)
+        button(type='submit') Add
         
     div.spacer
       a(href='/') Return to the homepage
