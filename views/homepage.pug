@@ -9,14 +9,26 @@ html
     table
      thead
       tr
-        th(rowspan='2') First Name
-        th(rowspan='2') Last Name
+        th(rowspan='2') FirstName
+        th(rowspan='2') LastName
         th(rowspan='2') Email
+        th(colspan='4') Pet
+      tr
+        th Name
+        th Type
+        th Age
+        th Gender
      tbody
-      each contact in data
+      each record in data
+        if record.associatedContacts && record.associatedContacts.length
+          each contact in record.associatedContacts
             tr
               td= contact.properties.firstname
               td= contact.properties.lastname
               td= contact.properties.email
-    div.spacer        
-          a(href='/update-cobj') Add to this table
+              td= record.properties.name
+              td= record.properties.type
+              td= record.properties.age
+              td= record.properties.gender
+      div.spacer        
+        a(href='/update-cobj') Add to this table
