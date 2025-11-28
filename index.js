@@ -27,5 +27,9 @@ app.get('/', async (req, res) => {
     }
 });
 
+app.get('/update-cobj', (req, res) => {
+    res.render('updates');
+});
+
 // * Localhost
 app.listen(3000, () => console.log('Listening on http://localhost:3000'));
